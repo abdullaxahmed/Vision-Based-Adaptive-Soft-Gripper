@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project presents an adaptive soft gripper system capable of detecting object shapes using computer vision and estimating object dimensions through 3D point cloud analysis. Based on the detected shape and size, the system automatically adjusts the gripper’s orientation,
+This project presents an adaptive soft gripper system capable of detecting object shapes using computer vision and estimating object dimensions through 3D point cloud analysis. Based on the detected shape and size, the system automatically adjusts the gripper’s orientation.
 
 The setup uses a RGBD camera to fuse color and depth information, allowing real-time classification of common shapes (e.g., circle, square, rectangle) and dimension estimation from aligned depth data. 
 
@@ -35,4 +35,27 @@ These configurations allow adaptive grasping based on object geometry.
 </p>
 
 The Intel RealSense D435i camera is positioned in front of the gripper, facing the object. It captures synchronized RGB and depth data used for shape detection and size estimation. The camera is fixed in place to maintain a consistent field of view during operation.
+
+
+## Object Shape Detection and Size Estimation Demonstration
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/Circle.gif" width="400"/><br/>
+      <strong>Circle-Shaped Object</strong>
+    </td>
+    <td align="center">
+      <img src="images/Rectangle.gif" width="400"/><br/>
+      <strong>Rectangle-Shaped Object</strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" style="padding-top: 20px;">
+      <img src="images/Square.gif" width="400"/><br/>
+      <strong>Square-Shaped Object</strong>
+    </td>
+  </tr>
+</table>
+
 
